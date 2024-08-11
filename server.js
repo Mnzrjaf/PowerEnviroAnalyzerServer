@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/api', async (req, res) => {
     try {
-        const url = 'http://52.187.146.57:8000'; // Make sure this URL is correct for your setup
+        const url = 'http://20.193.146.161/api.php'; // Make sure this URL is correct for your setup
         const response = await axios.get(url);
         
         res.json(response.data); // Send the response data as JSON
