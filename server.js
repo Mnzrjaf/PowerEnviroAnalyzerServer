@@ -1,6 +1,13 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 const app = express();
+
+const corsOpt = {
+    origin: '*',  
+}
+
+app.use(cors(corsOpt));
 
 app.get('/api', async (req, res) => {
     try {
